@@ -13,6 +13,8 @@ Here's a minimal example:
 name = "My Awesome Blueprint"
 version = "1.0.0"
 
+type = "service"
+
 remote {
     origin = "https://github.com/KatanPanel/blueprints"
 }
@@ -24,7 +26,8 @@ build {
 
 The above example demonstrates the following features of blueprints:
 * **Semantic Versioning**: Blueprints must follow the [semantic versioning standard](https://semver.org/).
-* **Remote Tracking**: Blueprints can be imported from remote sources so Katan users will not be limited to blueprints created from themselves.
+* **Remote Tracking**: Blueprints can be imported from remote sources so Katan users will not be limited to local blueprints.
+* **Variant**: A blueprint does not necessarily have to be from a game server, service blueprints can also be created eg for a database.
 
 ## Contributing
 
