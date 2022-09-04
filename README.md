@@ -1,17 +1,34 @@
 # blueprints
+Blueprints are models used to determine how an instance, a component of its [terminology](https://katan.org/docs/getting-started/ecosystem), will be built.
 
-"Blueprint" are what we call entities that holds the definitions of properties used in units created by Katan.
+* [Introduction](#introduction)
+* [How to Contribute](#contributing)
 
-Configuration files are the information based on the composition of applications in unit creation environment.
+## Introduction
 
-Each file contains properties that can be used to customize the final output of the unit build, through it, you can
-assign properties, change build format and configuration, among other things, units have their own default build
-settings, but it always prioritizes the application target assigned to it. Blueprint files uses
-the [HOCON](https://github.com/lightbend/config/blob/main/HOCON.md) file format.
+Created from files in [HOCON format](https://github.com/lightbend/config/blob/main/HOCON.md), blueprints definitions will later be transformed into instances, these files are **verified and published in this repository not containing any sensitive data or malicious purpose**, of course, if they are not used in private scope.
+
+Here's a minimal example:
+```ini
+name = "My Awesome Blueprint"
+version = "1.0.0"
+
+remote {
+    origin = "https://github.com/KatanPanel/blueprints"
+}
+
+build {
+    image = "busybox"
+}
+```
+
+The above example demonstrates the following features of blueprints:
+* **Semantic Versioning**: Blueprints must follow the [semantic versioning standard](https://semver.org/).
+* **Remote Tracking**: Blueprints can be imported from remote sources so Katan users will not be limited to blueprints created from themselves.
 
 ## Contributing
 
-Before you start contributing remember that **this repository is public and used by everyone who uses Katan** so always
+Before you start contributing remember that **this repository is public and used by Katan** so always
 remember this when doing something during your contribution that is not just beneficial to you but also in a general
 context.
 
