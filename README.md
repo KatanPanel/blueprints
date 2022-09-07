@@ -1,8 +1,11 @@
 # blueprints
-Blueprints are models used to determine how an instance, a component of its [terminology](https://katan.org/docs/getting-started/ecosystem), will be built.
+Blueprints are models used to determine how an instance, a component of its terminology, will be built.\
+[**The specification can be found here**](SPEC.md)
+
+### Table of Contents
 
 * [Introduction](#introduction)
-* [How to Contribute](#contributing)
+* [Contributing](#contributing)
 
 ## Introduction
 
